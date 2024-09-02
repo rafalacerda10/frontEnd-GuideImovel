@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url(/styles/header.css);
-@import url(/styles/footer.css);
-@import url(/styles/main.css);
-@import url(/styles/mensagem.css);
-@import url(/styles/modal.css);
-@import url(/styles/media-queries.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(mensagem.css);
+@import url(modal.css);
+@import url(media-queries.css);
 *{
     margin: 0;
     padding: 0;
