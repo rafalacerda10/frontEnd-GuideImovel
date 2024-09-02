@@ -1,0 +1,57 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secondary);
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: var(--color-tertiary)
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    margin: 0 10px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    color: #bbb;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-menu.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.navbar-menu a {
+    margin: 10px 0;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imovel Guide</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="capturar-imagem.js"></script>
+    
+    
+</head>
+<body>
+    <!-- Cabeçalho -->
+     <header>
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                <div class="navbar-menu" id="navbarMenu">
+                    <a href="#" class="cabeclho-condominios">Condomínios</a>
+                    <a href="#" class="cabeclho-forum">Fórum</a>
+                    <a href="#" class="cabeclho-guia">Guia</a>
+                    <a href="#" class="cabeclho-artigos">Artigos</a>
+                    <a href="#" class="cabeclho-ferramentas">Ferramentas</a>
+               
+                    <a href="#" class="cabeclho-cotar-imovel">Cotar Imóvel</a>
+                    <a href="#" class="cabeclho-planos">Planos</a>
+                    <a href="#" class="cabeclho-entrar">Entrar</a>
+                    <a href="#" class="cabeclho-cadastre-se">Cadastre-se</a>
+                </div>    
+            </div>
+        </nav>
+     </header>
+    
+     <main class="main">
+        <!-- Box Corretores -->
+        <div class="box">  
+            <div class="box-corretores">
+                <img src="./img/Corretora.jpg" width="100px" height="100">
+                <p>
+                    Nome da corretora <br>
+                    3000 pontos
+                    <nav class="ver-telefone"onclick="revelarTelefone()"> <a href="#">ver telefone</a>
+                    <span id="telefoneSpan">+55 (11) 99573-8799</span>
+                    <span id="placeholder">ver telefone</span> </nav>
+                </p>
+            </div>
+            <div class="box-corretores">
+                <img src="./img/Corretor.png" width="100px" height="100px">
+                <p>
+                    Nome da corretor <br>
+                    1260 pontos
+                    <nav class="ver-telefone"onclick="revelarTelefone()"> <a href="#">ver telefone</a>
+                    <span id="telefoneSpan">+55 (11) 99573-8799</span>
+                    <span id="placeholder">ver telefone</span> </nav>
+                </p>
+            </div>
+        </div>
+        <!-- Mandar uma mensagem -->
+        <div class="box">
+            <h3> Mande uma mensagem</h3> 
+            <form action="">
+                
+                
+                <label for="cpf">Digite seu CPF:</label>
+                <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00">
+                <br>
+                <label for="telefone">Digite seu Telefone:</label>
+                <input type="text" id="telefone" name="telefone" maxlength="15" placeholder="(00) 00000-0000">
+                 <!-- Caixa de Texto -->
+                <label for="mensagem">Escreva sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui..."></textarea>
+                <!-- Botão Enviar -->
+                <button type="submit" id="enviar">Enviar</button>
+
+            </form>
+            </div>
+        <!-- Regra de 3 -->
+            <div class="box">
+                <h3>Calcular Regra de Três</h3>
+                <label for="a">Valor de A:</label>
+                <input type="number" id="a" placeholder="Ex: 10">
+                <label for="b">Valor de B:</label>
+                <input type="number" id="b" placeholder="Ex: 20">
+                <label for="c">Valor de C:</label>
+                <input type="number" id="c" placeholder="Ex: 30">
+                <!-- Botão calcular regra -->
+                <button onclick="calcularRegraDeTres()">Calcular</button>
+                <!--Resultado  -->
+                <p id="resultado">
+                    Resultado: <span id="resultado"></span>
+                </p>
+                </div>
+        </div>
+        <!-- Imagem Modal -->
+        <div class="box">
+            <div class="box-modal image-container">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <div class="modal-content">
+            <img id="imagemModal" src="./img/imovel-picture.jpeg" width="90%" height="90%">
+                    </div>
+            <nav>
+                <button onclick="aumentarTamanho()" class="button-modal">
+                    Abrir imagem completa
+                </button>
+            </nav>
+            </div>
+        </div>
+        <!-- Capturar Imagem -->
+        <div class="box">
+            
+            <div class="container" id="captureArea">
+                <div class="image-box">
+                    <img src="/img/imovel-picture.jpeg" width="100%" height="90%" alt="Imagem Exemplo">
+                </div>
+                
+               
+            </div>
+            <button class="capture-button" onclick="capturarImagem()">Capturar Imagem</button>
+        </div>
+        <!-- Imagens -->
+        <div class="box">
+            <h3>
+                Picture imovel
+            </h3>
+            <img src="./img/imovel-picture.jpeg" width="100%" height="90%" alt="">
+        </div>
+
+     </main>
+
+
+     <!-- footer -->
+      <footer>
+        <nav class="rodape-container">
+                <div class="rodape"></div>
+                    <a href="#">Termos</a></li>
+                    <a href="#">Contatos</a></li>
+                    <a href="#">Sobre</a></li>
+                <div class="rodape"></div>
+                    <a href="#">Direitos reservados</a></li>
+                    <a href="#">logo-item</a></li>
+           
+        </nav>
+      </footer>
+      <script src="regra-de-tres.js">
+      </script>
+      <script src="script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+      
+
+</body>
+</html>

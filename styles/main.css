@@ -1,0 +1,27 @@
+.main {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    margin-top: 7%;
+    margin-left: 4%;
+}
+.box {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 3%;
+    margin: 5px;
+    display: flex;
+    margin-bottom: 2%;
+    
+    flex-direction: column; /* Alinha os elementos de acordo com a direção horizontal */
+}
+
+.box p {
+    flex: 1; /* O texto ocupará o espaço restante */
+    float: right;
+    margin-right: 10%;
+    margin-top: 14%;
+    margin-left: 0;
+}

@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: auto;
+    margin-bottom: 5%;
+}
+
+.cabecalho-container{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+   
+}
+.cabecalho-container a {
+    position: fixed;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--color-primary);
+    
+}

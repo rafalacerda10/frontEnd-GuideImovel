@@ -1,0 +1,14 @@
+.rodape-container {
+    background: #000;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.rodape-container > a{
+    color: #fff;
+    text-decoration: none;
+    text-decoration: none;
+}
